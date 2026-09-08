@@ -1,0 +1,81 @@
+text,category,cleaned_text
+There is a huge pothole on the road,Pothole,huge pothole road
+Deep hole in the street,Pothole,deep hole street
+Road is damaged with a large hole,Pothole,road damaged large hole
+There is a dangerous pothole near my house,Pothole,dangerous pothole near house
+Water is leaking from the pipe,Water Leakage,water leaking pipe
+Water is continuously flowing on the road,Water Leakage,water continuously flowing road
+Pipeline appears to be leaking,Water Leakage,pipeline appears leaking
+There is water coming out of the ground,Water Leakage,water coming ground
+Garbage is overflowing near my house,Garbage,garbage overflowing near house
+Trash has not been collected for days,Garbage,trash collected days
+Large amount of waste is on the street,Garbage,large amount waste street
+Garbage bin is overflowing,Garbage,garbage bin overflowing
+Street light is not working,Streetlight,street light working
+Broken street lamp near the road,Streetlight,broken street lamp near road
+The road is dark because the light is damaged,Streetlight,road dark light damaged
+Streetlight has stopped working,Streetlight,streetlight stopped working
+Drain is blocked and water is not flowing,Drainage,drain blocked water flowing
+Sewage drain is overflowing,Drainage,sewage drain overflowing
+Drainage system appears to be blocked,Drainage,drainage system appears blocked
+Water is overflowing from the blocked drain,Drainage,water overflowing blocked drain
+Massive pothole causing problems for cars,Pothole,massive pothole causing problems cars
+There is a crack and deep hole on the main road,Pothole,crack deep hole main road
+Vehicles are getting damaged because of the pothole,Pothole,vehicles getting damaged pothole
+Dangerous hole in the middle of the street,Pothole,dangerous hole middle street
+A water pipe has burst and water is leaking,Water Leakage,water pipe burst water leaking
+Water is flooding from a damaged pipeline,Water Leakage,water flooding damaged pipeline
+There is a major leak in the underground water pipe,Water Leakage,major leak underground water pipe
+Broken pipe is causing water to flow onto the road,Water Leakage,broken pipe causing water flow onto road
+Waste is scattered all over the road,Garbage,waste scattered road
+The garbage container is completely full,Garbage,garbage container completely full
+Uncollected trash is creating a bad smell,Garbage,uncollected trash creating bad smell
+Rubbish is piling up near the houses,Garbage,rubbish piling near houses
+The street lamp is damaged and not turning on,Streetlight,street lamp damaged turning
+There are no lights working on this road,Streetlight,lights working road
+The road is very dark because the streetlights are broken,Streetlight,road dark streetlights broken
+A street light pole is not functioning,Streetlight,street light pole functioning
+The sewer drain is blocked and overflowing,Drainage,sewer drain blocked overflowing
+Water cannot pass through the blocked drainage,Drainage,water cannot pass blocked drainage
+The drain is full and sewage is coming out,Drainage,drain full sewage coming
+A blocked drain is causing flooding on the road,Drainage,blocked drain causing flooding road
+A broken pipeline is flooding the road,Water Leakage,broken pipeline flooding road
+Water is flooding the street from a damaged pipe,Water Leakage,water flooding street damaged pipe
+The main water pipeline has burst,Water Leakage,main water pipeline burst
+A damaged water pipe is leaking heavily,Water Leakage,damaged water pipe leaking heavily
+Water is continuously flowing from the underground pipeline,Water Leakage,water continuously flowing underground pipeline
+There is a serious leak from the main pipeline,Water Leakage,serious leak main pipeline
+Broken water pipes are causing flooding in the area,Water Leakage,broken water pipes causing flooding area
+Water is spreading across the road from a leaking pipe,Water Leakage,water spreading across road leaking pipe
+A large pothole has formed on the highway,Pothole,large pothole formed highway
+There is a dangerous crater in the middle of the road,Pothole,dangerous crater middle road
+The road has a deep hole causing vehicle damage,Pothole,road deep hole causing vehicle damage
+Cars are struggling to avoid a huge pothole,Pothole,cars struggling avoid huge pothole
+A damaged section of road has a large hole,Pothole,damaged section road large hole
+The pothole is getting bigger after heavy traffic,Pothole,pothole getting bigger heavy traffic
+There is a deep hole near the traffic junction,Pothole,deep hole near traffic junction
+Vehicles are at risk because of the damaged road,Pothole,vehicles risk damaged road
+Garbage has accumulated on the roadside,Garbage,garbage accumulated roadside
+Trash is overflowing from the waste bin,Garbage,trash overflowing waste bin
+A large pile of rubbish is blocking the street,Garbage,large pile rubbish blocking street
+Waste has not been collected for many days,Garbage,waste collected many days
+Garbage is scattered around the public area,Garbage,garbage scattered around public area
+The dustbin is full and needs to be emptied,Garbage,dustbin full needs emptied
+People have dumped a large amount of waste on the road,Garbage,people dumped large amount waste road
+Rubbish is creating an unhealthy environment in the area,Garbage,rubbish creating unhealthy environment area
+The street lights are not turning on at night,Streetlight,street lights turning night
+A broken street lamp is making the road unsafe,Streetlight,broken street lamp making road unsafe
+Several streetlights have stopped working,Streetlight,several streetlights stopped working
+The road is dark because the lamp posts are damaged,Streetlight,road dark lamp posts damaged
+Street lighting is not working in this area,Streetlight,street lighting working area
+The street lamp is flickering and malfunctioning,Streetlight,street lamp flickering malfunctioning
+No streetlights are working near the main road,Streetlight,streetlights working near main road
+The damaged light pole needs immediate repair,Streetlight,damaged light pole needs immediate repair
+The sewer drain is overflowing onto the road,Drainage,sewer drain overflowing onto road
+A blocked drainage pipe is causing water to collect,Drainage,blocked drainage pipe causing water collect
+The drain is clogged and sewage is coming out,Drainage,drain clogged sewage coming
+Rainwater cannot flow because the drainage is blocked,Drainage,rainwater cannot flow drainage blocked
+The drainage channel is overflowing after heavy rain,Drainage,drainage channel overflowing heavy rain
+A blocked sewer is causing flooding in the street,Drainage,blocked sewer causing flooding street
+Dirty water is coming out from the blocked drain,Drainage,dirty water coming blocked drain
+The drainage system needs cleaning because it is clogged,Drainage,drainage system needs cleaning clogged

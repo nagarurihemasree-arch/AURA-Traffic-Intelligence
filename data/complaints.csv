@@ -1,0 +1,85 @@
+text,category
+"There is a huge pothole on the road",Pothole
+"Deep hole in the street",Pothole
+"Road is damaged with a large hole",Pothole
+"There is a dangerous pothole near my house",Pothole
+"Water is leaking from the pipe",Water Leakage
+"Water is continuously flowing on the road",Water Leakage
+"Pipeline appears to be leaking",Water Leakage
+"There is water coming out of the ground",Water Leakage
+"Garbage is overflowing near my house",Garbage
+"Trash has not been collected for days",Garbage
+"Large amount of waste is on the street",Garbage
+"Garbage bin is overflowing",Garbage
+"Street light is not working",Streetlight
+"Broken street lamp near the road",Streetlight
+"The road is dark because the light is damaged",Streetlight
+"Streetlight has stopped working",Streetlight
+"Drain is blocked and water is not flowing",Drainage
+"Sewage drain is overflowing",Drainage
+"Drainage system appears to be blocked",Drainage
+"Water is overflowing from the blocked drain",Drainage
+Massive pothole causing problems for cars,Pothole
+There is a crack and deep hole on the main road,Pothole
+Vehicles are getting damaged because of the pothole,Pothole
+Dangerous hole in the middle of the street,Pothole
+
+A water pipe has burst and water is leaking,Water Leakage
+Water is flooding from a damaged pipeline,Water Leakage
+There is a major leak in the underground water pipe,Water Leakage
+Broken pipe is causing water to flow onto the road,Water Leakage
+
+Waste is scattered all over the road,Garbage
+The garbage container is completely full,Garbage
+Uncollected trash is creating a bad smell,Garbage
+Rubbish is piling up near the houses,Garbage
+
+The street lamp is damaged and not turning on,Streetlight
+There are no lights working on this road,Streetlight
+The road is very dark because the streetlights are broken,Streetlight
+A street light pole is not functioning,Streetlight
+
+The sewer drain is blocked and overflowing,Drainage
+Water cannot pass through the blocked drainage,Drainage
+The drain is full and sewage is coming out,Drainage
+A blocked drain is causing flooding on the road,Drainage
+A broken pipeline is flooding the road,Water Leakage
+Water is flooding the street from a damaged pipe,Water Leakage
+The main water pipeline has burst,Water Leakage
+A damaged water pipe is leaking heavily,Water Leakage
+Water is continuously flowing from the underground pipeline,Water Leakage
+There is a serious leak from the main pipeline,Water Leakage
+Broken water pipes are causing flooding in the area,Water Leakage
+Water is spreading across the road from a leaking pipe,Water Leakage
+A large pothole has formed on the highway,Pothole
+There is a dangerous crater in the middle of the road,Pothole
+The road has a deep hole causing vehicle damage,Pothole
+Cars are struggling to avoid a huge pothole,Pothole
+A damaged section of road has a large hole,Pothole
+The pothole is getting bigger after heavy traffic,Pothole
+There is a deep hole near the traffic junction,Pothole
+Vehicles are at risk because of the damaged road,Pothole
+Garbage has accumulated on the roadside,Garbage
+Trash is overflowing from the waste bin,Garbage
+A large pile of rubbish is blocking the street,Garbage
+Waste has not been collected for many days,Garbage
+Garbage is scattered around the public area,Garbage
+The dustbin is full and needs to be emptied,Garbage
+People have dumped a large amount of waste on the road,Garbage
+Rubbish is creating an unhealthy environment in the area,Garbage
+The street lights are not turning on at night,Streetlight
+A broken street lamp is making the road unsafe,Streetlight
+Several streetlights have stopped working,Streetlight
+The road is dark because the lamp posts are damaged,Streetlight
+Street lighting is not working in this area,Streetlight
+The street lamp is flickering and malfunctioning,Streetlight
+No streetlights are working near the main road,Streetlight
+The damaged light pole needs immediate repair,Streetlight
+The sewer drain is overflowing onto the road,Drainage
+A blocked drainage pipe is causing water to collect,Drainage
+The drain is clogged and sewage is coming out,Drainage
+Rainwater cannot flow because the drainage is blocked,Drainage
+The drainage channel is overflowing after heavy rain,Drainage
+A blocked sewer is causing flooding in the street,Drainage
+Dirty water is coming out from the blocked drain,Drainage
+The drainage system needs cleaning because it is clogged,Drainage
