@@ -1,6 +1,21 @@
 road,vehicle_count,avg_speed,road_capacity,normal_traffic,occupancy,incident_flag,congestion_level,risk_score,priority,recommended_action
-Road A,120,45,180,110,66.7,0,NORMAL,27.5,LOW,No immediate action
-Road B,250,28,300,190,83.3,0,MODERATE,57.92,HIGH,Increase monitoring + adjust signal timing
-Road C,180,35,240,150,75.0,0,MODERATE,43.33,MEDIUM,Monitor traffic conditions
-Road D,320,20,350,220,91.4,1,HIGH,73.33,CRITICAL,Deploy traffic control + suggest alternate route
-Road E,90,55,200,80,45.0,0,NORMAL,15.42,LOW,No immediate action
+R0113,1222.0,28.3,2070.0,1242.0,45.0,1,CRITICAL,72.12,CRITICAL,Deploy traffic control + suggest alternate route
+R0119,1912.0,28.1,3105.0,1863.0,47.0,0,CRITICAL,71.4,CRITICAL,Deploy traffic control + suggest alternate route
+R0312,635.0,28.1,1035.0,621.0,47.0,0,CRITICAL,71.35,CRITICAL,Deploy traffic control + suggest alternate route
+R0195,1891.0,28.2,3105.0,1863.0,47.0,0,CRITICAL,71.18,CRITICAL,Deploy traffic control + suggest alternate route
+R0108,1890.0,28.2,3105.0,1863.0,47.0,0,CRITICAL,71.18,CRITICAL,Deploy traffic control + suggest alternate route
+R0317,1876.0,28.2,3105.0,1863.0,46.0,0,CRITICAL,71.03,CRITICAL,Deploy traffic control + suggest alternate route
+R0402,624.0,28.2,1035.0,621.0,46.0,0,CRITICAL,71.0,CRITICAL,Deploy traffic control + suggest alternate route
+R0124,1249.0,28.2,2070.0,1242.0,46.0,0,CRITICAL,71.0,CRITICAL,Deploy traffic control + suggest alternate route
+R0277,1229.0,28.2,2070.0,1242.0,46.0,0,CRITICAL,70.69,CRITICAL,Deploy traffic control + suggest alternate route
+R0137,1247.0,37.5,2070.0,1242.0,46.0,1,CRITICAL,70.64,CRITICAL,Deploy traffic control + suggest alternate route
+R0123,1957.0,37.3,3105.0,1863.0,48.0,0,HIGH,69.52,HIGH,Increase monitoring + evaluate signal timing
+R0114,1219.0,28.3,2070.0,1242.0,45.0,0,HIGH,69.48,HIGH,Increase monitoring + evaluate signal timing
+R0345,1274.0,37.5,2070.0,1242.0,47.0,0,HIGH,69.04,HIGH,Increase monitoring + evaluate signal timing
+R0172,1271.0,37.4,2070.0,1242.0,47.0,0,HIGH,69.0,HIGH,Increase monitoring + evaluate signal timing
+R0098,1218.0,28.3,2070.0,1242.0,45.0,0,HIGH,68.88,HIGH,Increase monitoring + evaluate signal timing
+R0068,1208.0,28.3,2070.0,1242.0,45.0,0,HIGH,68.84,HIGH,Increase monitoring + evaluate signal timing
+R0254,615.0,28.3,1035.0,621.0,46.0,0,HIGH,68.71,HIGH,Increase monitoring + evaluate signal timing
+R0281,1874.0,37.5,3105.0,1863.0,46.0,0,HIGH,68.67,HIGH,Increase monitoring + evaluate signal timing
+R0096,1241.0,37.6,2070.0,1242.0,46.0,0,HIGH,68.52,HIGH,Increase monitoring + evaluate signal timing
+R0293,1297.0,46.7,2070.0,1242.0,48.0,0,HIGH,67.05,HIGH,Increase monitoring + evaluate signal timing

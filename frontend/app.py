@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import urllib.request
 import json
+import os
 
 # =========================================================
 # AURA — Adaptive Urban Road Intelligence & Response Assistant
@@ -459,7 +460,7 @@ st.dataframe(
 )
 
 # =========================================================
-# TRAFFIC FORECAST
+# TRAFFIC FORECAST — ORGANIZER PROVIDED TARGETS
 # =========================================================
 
 st.markdown(
@@ -467,38 +468,61 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-current_traffic = int(
-    selected["vehicle_count"]
+FORECAST_FILE = os.path.join(
+    os.path.dirname(__file__),
+    "..",
+    "data",
+    "forecast_targets_train.csv"
 )
 
-forecast_data = pd.DataFrame({
+try:
+    forecast_df = pd.read_csv(FORECAST_FILE)
 
-    "Time": [
-        "Now",
-        "15 min",
-        "30 min",
-        "60 min"
-    ],
+    road_forecast = forecast_df[
+        forecast_df["segment_id"].astype(str) == str(road)
+    ].copy()
 
-    "Traffic Load": [
-        current_traffic,
-        current_traffic * 1.05,
-        current_traffic * 1.10,
-        current_traffic * 1.15
-    ]
+    if not road_forecast.empty:
 
-})
+        # Use the first matching forecast record for the selected road
+        forecast = road_forecast.iloc[0]
 
-st.line_chart(
-    forecast_data.set_index("Time"),
-    width="stretch"
-)
+        forecast_data = pd.DataFrame({
+            "Time": ["15 min", "30 min", "45 min", "60 min"],
+            "Predicted Traffic": [
+                forecast["target_flow_15m"],
+                forecast["target_flow_30m"],
+                forecast["target_flow_45m"],
+                forecast["target_flow_60m"]
+            ]
+        })
 
-st.caption(
-    f"Estimated traffic trend for {road}. "
-    "Forecast values are simulated demonstration estimates."
-)
+        st.line_chart(
+            forecast_data.set_index("Time"),
+            width="stretch"
+        )
 
+        st.caption(
+            f"Forecast targets from the organizer-provided "
+            f"NeuraX dataset for {road}."
+        )
+
+        st.dataframe(
+            forecast_data,
+            width="stretch",
+            hide_index=True
+        )
+
+    else:
+        st.warning(
+            f"No forecast target found for road {road}."
+        )
+
+except Exception as e:
+
+    st.error(
+        f"Unable to load organizer forecast data: {e}"
+    )
 # =========================================================
 # SPILLBACK RISK
 # =========================================================
