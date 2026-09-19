@@ -192,8 +192,8 @@ Member 3 — Aditi
 
 Clone the repository
 
-git clone <YOUR_GITHUB_REPOSITORY>
-cd <PROJECT_FOLDER>
+git clone https://github.com/gpedarapati-dotcom/AURA-Traffic-Intelligence.git
+cd AURA-Traffic-Intelligence
 
 Install dependencies
 
