@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA - Urban Traffic Intelligence</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            padding: 25px 40px;
+            background: #111827;
+            border-bottom: 1px solid #334155;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        .subtitle {
+            margin-top: 8px;
+            color: #94a3b8;
+        }
+
+        .container {
+            padding: 30px 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 22px;
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+            color: #94a3b8;
+        }
+
+        .value {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #1e293b;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #334155;
+        }
+
+        th {
+            background: #334155;
+        }
+
+        .CRITICAL {
+            color: #ef4444;
+            font-weight: bold;
+        }
+
+        .HIGH {
+            color: #f97316;
+            font-weight: bold;
+        }
+
+        .MEDIUM {
+            color: #facc15;
+            font-weight: bold;
+        }
+
+        .LOW {
+            color: #22c55e;
+            font-weight: bold;
+        }
+
+        .alert {
+            background: #450a0a;
+            border: 1px solid #ef4444;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🚦 AURA</h1>
+    <div class="subtitle">
+        Adaptive Urban Road Intelligence & Response Assistant
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="alert" id="criticalAlert">
+        Loading traffic intelligence...
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Total Vehicles</h3>
+            <div class="value" id="totalVehicles">-</div>
+        </div>
+
+        <div class="card">
+            <h3>Average Speed</h3>
+            <div class="value" id="avgSpeed">-</div>
+        </div>
+
+        <div class="card">
+            <h3>Critical Roads</h3>
+            <div class="value" id="criticalRoads">-</div>
+        </div>
+
+    </div>
+
+    <h2>Traffic Intelligence</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Road</th>
+                <th>Vehicles</th>
+                <th>Speed</th>
+                <th>Congestion</th>
+                <th>Risk</th>
+                <th>Priority</th>
+                <th>Recommended Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="trafficTable">
+        </tbody>
+
+    </table>
+
+</div>
+
+<script>
+
+async function loadTrafficData() {
+
+    const response = await fetch(
+        "http://127.0.0.1:5000/api/traffic"
+    );
+
+    const data = await response.json();
+
+    let totalVehicles = 0;
+    let totalSpeed = 0;
+    let criticalCount = 0;
+
+    const table = document.getElementById("trafficTable");
+
+    table.innerHTML = "";
+
+    data.forEach(row => {
+
+        totalVehicles += Number(row.vehicle_count);
+        totalSpeed += Number(row.avg_speed);
+
+        if (row.priority === "CRITICAL") {
+            criticalCount++;
+        }
+
+        const tr = document.createElement("tr");
+
+        tr.innerHTML = `
+            <td>${row.road}</td>
+            <td>${row.vehicle_count}</td>
+            <td>${row.avg_speed} km/h</td>
+            <td>${row.congestion_level}</td>
+            <td>${row.risk_score}</td>
+            <td class="${row.priority}">
+                ${row.priority}
+            </td>
+            <td>${row.recommended_action}</td>
+        `;
+
+        table.appendChild(tr);
+    });
+
+    document.getElementById("totalVehicles").textContent =
+        totalVehicles;
+
+    document.getElementById("avgSpeed").textContent =
+        (totalSpeed / data.length).toFixed(1) + " km/h";
+
+    document.getElementById("criticalRoads").textContent =
+        criticalCount;
+
+    const critical = data.find(
+        row => row.priority === "CRITICAL"
+    );
+
+    if (critical) {
+        document.getElementById("criticalAlert").innerHTML =
+            `🚨 <strong>CRITICAL ALERT:</strong>
+            ${critical.road} has a risk score of
+            ${critical.risk_score}.
+            Recommended action:
+            ${critical.recommended_action}`;
+    }
+}
+
+loadTrafficData();
+
+</script>
+
+</body>
+</html>
