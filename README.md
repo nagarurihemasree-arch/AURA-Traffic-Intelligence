@@ -1,116 +1,147 @@
-# AURA — AI-Powered Urban Risk & Alert System
+# AURA — Adaptive Urban Road Intelligence & Response Assistant
 
-> **AURA** is an AI-powered urban intelligence system designed to detect, analyse, and prioritize city problems before they become critical.
+> AURA is an AI-powered decision-support system designed to detect abnormal traffic conditions, identify potential incidents, predict congestion, estimate spillback risk, and suggest simulated responses before traffic problems become more severe.
 
-## 🌆 Overview
+## Problem Statement
 
-Modern cities generate large amounts of information through citizen complaints, images, locations, and other data sources. However, this information is often fragmented, making it difficult for authorities to identify which problems require immediate attention.
+**Urban Traffic Flow & Incident Intelligence**
 
-**AURA (AI-powered Urban Risk & Alert System)** addresses this gap by combining **AI-based visual detection, complaint intelligence, location analysis, hotspot detection, and risk scoring** into a unified early-warning platform.
+Urban traffic conditions can change rapidly because of traffic congestion, road incidents, sudden changes in traffic volume, road blockages, road capacity limitations, weather, and road-work disruptions.
 
-Instead of simply recording complaints, AURA aims to answer:
+The challenge is not only detecting traffic congestion, but also understanding where the problem is occurring, whether an abnormal incident may be involved, what could happen next, and how the impact could potentially be reduced.
 
-> **"What is happening, where is it happening, how serious is it, and what should be prioritized first?"**
+AURA is designed to address this gap by combining traffic analysis, incident intelligence, forecasting, spillback analysis, and decision-support into a unified system.
 
----
+## Our Solution
 
-## 🎯 Problem Statement
+AURA acts as an intelligent decision-support layer for urban traffic management.
 
-Urban infrastructure problems such as potholes, garbage accumulation, water leakage, damaged roads, drainage issues, and streetlight failures can affect public safety and quality of life.
+### Core Workflow
 
-Traditional complaint systems mainly collect and forward complaints. They often do not:
+Traffic Data  
+↓  
+Data Preprocessing  
+↓  
+Traffic Analysis  
+↓  
+Congestion & Incident Detection  
+↓  
+Traffic Forecasting  
+↓  
+Spillback Risk  
+↓  
+Adaptive Recommendation  
+↓  
+What-if Simulation  
+↓  
+Decision Support
 
-* Identify repeated complaints at the same location
-* Automatically analyse visual evidence
-* Detect sudden increases in complaints
-* Identify high-risk geographic hotspots
-* Prioritize problems based on severity and impact
-* Provide an intelligent early-warning mechanism
+The key idea is:
 
-As a result, authorities may react only after a problem becomes severe.
+**Detection → Prediction → Risk → Recommendation → Simulation**
 
-AURA is designed to move from **reactive complaint management to proactive urban risk intelligence**.
+## Key Features
 
----
+### 1. Traffic Anomaly & Congestion Detection
 
-# 💡 Our Solution
+AURA analyses traffic conditions to identify unusual increases in congestion or abnormal traffic patterns.
 
-AURA acts as an intelligent decision-support layer between citizens and authorities.
+It is designed to identify:
 
-The system collects urban problem information and processes it using AI and data analytics.
+- Congested road segments
+- Abnormal traffic increases
+- Junction-level problems
+- Changes from expected traffic conditions
 
-### Core workflow
+### 2. Incident Intelligence
+
+AURA analyses abnormal traffic patterns to identify locations that may require incident investigation.
+
+The workflow is:
+
+Normal Traffic  
+↓  
+Sudden Traffic Change  
+↓  
+Abnormal Pattern Detected  
+↓  
+Incident Risk  
+↓  
+Alert / Investigation
+
+### 3. Traffic Forecasting
+
+AURA is designed to estimate future traffic conditions instead of looking only at the current situation.
+
+The system can consider future time windows such as:
+
+- 15 minutes
+- 30 minutes
+- 60 minutes
+
+### 4. Spillback Risk
+
+Congestion on one road can affect connected roads.
+
+AURA analyses connected traffic conditions to estimate where congestion could potentially spread.
+
+Road A  
+↓  
+Congestion  
+↓  
+Road B  
+↓  
+Road C  
+↓  
+Potential Spillback
+
+### 5. Adaptive Recommendations
+
+Based on detected and predicted conditions, AURA is designed to generate simulated traffic-management recommendations.
+
+For example:
+
+> Consider evaluating an alternative route or diversion for the affected traffic.
+
+The recommendation is advisory. AURA does not directly control traffic signals or roadside infrastructure.
+
+### 6. What-if Simulation
+
+AURA is designed to allow possible interventions to be evaluated before applying them.
+
+Current Situation  
+↓  
+Possible Intervention  
+↓  
+Simulated Result  
+↓  
+Compare Impact
+
+This allows an operator to evaluate:
+
+> “What could happen if we take this action?”
+
+## System Architecture
 
 ```text
-Collect
-   ↓
-Detect
-   ↓
-Analyse
-   ↓
-Calculate Risk
-   ↓
-Identify Priority
-   ↓
-Generate Alert
-   ↓
-Support Action
-```
-
-AURA combines multiple signals rather than depending on a single complaint.
-
----
-
-# 🧠 Key Features
-
-## 1. AI-Based Visual Detection
-
-AURA uses computer vision to analyse images of urban infrastructure problems.
-
-The vision module is designed to identify problems such as:
-
-* Potholes
-* Road damage
-* Garbage
-* Other detectable infrastructure issues
-
-The system can extract:
-
-* Problem category
-* Confidence score
-* Bounding box
-* Visual evidence
-
-This reduces dependence on completely manual inspection.
-
----
-
-## 2. Complaint Intelligence
-
-Citizen complaints are treated as valuable data rather than isolated reports.
-
-AURA can analyse:
-
-* Complaint category
-* Location
-* Time
-* Frequency
-* Complaint history
-* Supporting images
-
-Repeated complaints about the same issue can indicate a potentially larger infrastructure problem.
-
----
-
-## 3. Location-Based Intelligence
-
-The same problem can have different levels of importance depending on its location.
-
-AURA uses geographical information to identify:
-
-* Repeated problem locations
-* Problem hotspots
-* High-risk areas
-* Areas containing multiple infrastructure issues
-
-This allows authoritie
+                 TRAFFIC DATA
+                      ↓
+              DATA PREPROCESSING
+                      ↓
+                AI ANALYSIS
+          ┌───────────┴───────────┐
+          ↓                       ↓
+   CONGESTION              INCIDENT
+   DETECTION               INTELLIGENCE
+          └───────────┬───────────┘
+                      ↓
+              TRAFFIC FORECAST
+               15 / 30 / 60 MIN
+                      ↓
+               SPILLBACK RISK
+                      ↓
+           ADAPTIVE RECOMMENDATION
+                      ↓
+               WHAT-IF SIMULATION
+                      ↓
+            DECISION SUPPORT
