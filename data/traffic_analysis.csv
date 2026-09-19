@@ -1,6 +1,6 @@
-road,vehicle_count,avg_speed,congestion_level,risk_score,priority,recommended_action
-Road A,120,45,NORMAL,27.5,LOW,No immediate action
-Road B,250,28,MODERATE,57.92,HIGH,Increase monitoring + adjust signal timing
-Road C,180,35,MODERATE,43.33,MEDIUM,Monitor traffic conditions
-Road D,320,20,HIGH,73.33,CRITICAL,Deploy traffic control + suggest alternate route
-Road E,90,55,NORMAL,15.42,LOW,No immediate action
+road,vehicle_count,avg_speed,road_capacity,normal_traffic,occupancy,incident_flag,congestion_level,risk_score,priority,recommended_action
+Road A,120,45,180,110,66.7,0,NORMAL,27.5,LOW,No immediate action
+Road B,250,28,300,190,83.3,0,MODERATE,57.92,HIGH,Increase monitoring + adjust signal timing
+Road C,180,35,240,150,75.0,0,MODERATE,43.33,MEDIUM,Monitor traffic conditions
+Road D,320,20,350,220,91.4,1,HIGH,73.33,CRITICAL,Deploy traffic control + suggest alternate route
+Road E,90,55,200,80,45.0,0,NORMAL,15.42,LOW,No immediate action
