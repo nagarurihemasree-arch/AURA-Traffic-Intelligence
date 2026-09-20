@@ -1,0 +1,18 @@
+text,category,location,date
+Water is leaking from a pipe,Water Leakage,Area A,2026-08-28
+Pipeline is leaking continuously,Water Leakage,Area A,2026-08-29
+Water is flowing on the road,Water Leakage,Area A,2026-08-30
+Water is coming from underground,Water Leakage,Area B,2026-08-31
+Huge pothole on the main road,Pothole,Area B,2026-09-01
+Large hole in the street,Pothole,Area B,2026-09-02
+Garbage is overflowing near houses,Garbage,Area C,2026-09-03
+Trash has not been collected,Garbage,Area C,2026-09-04
+Streetlight is broken,Streetlight,Area D,2026-08-28
+The road is dark because the light stopped working,Streetlight,Area D,2026-08-29
+Drain is blocked and overflowing,Drainage,Area E,2026-08-30
+Sewage is coming from the blocked drain,Drainage,Area E,2026-08-31
+Water is leaking heavily from the main pipeline,Water Leakage,Area A,2026-09-02
+Large amount of water is leaking on the road,Water Leakage,Area A,2026-09-03
+Pipeline has burst and water is flowing everywhere,Water Leakage,Area A,2026-09-03
+Continuous water leakage near the houses,Water Leakage,Area A,2026-09-04
+Water is flooding the street from a damaged pipe,Water Leakage,Area A,2026-09-04
